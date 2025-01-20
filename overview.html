@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Overview</title>
+    <link rel="icon" href="img/icon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/overview.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <img
+              src="img/overviewNavBarLogo.png"
+              alt="HabitHintsLogo"
+              id="habithintLogo"
+            />
+          </li>
+          <li>
+            <a href="index.html">Home Page</a>
+          </li>
+          <li class="overviewMenu">
+            <a href="overview.html">Overview</a>
+            <img src="img/arrow-down.png" alt="arrow" data-type="special" />
+            <ul class="submenu" data-type="special">
+              <li data-type="special"><a href="overview.html">About</a></li>
+              <li data-type="special">
+                <a href="overview.html#features">Features</a>
+              </li>
+              <li data-type="special">
+                <a href="overview.html#customerReviews">Customer Reviews</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contactUs.html">ContactUs</a>
+          </li>
+          <li>
+            <a href="download.html">Download</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--overview part of the page-->
+      <div class="container-about mb-4">
+        <div class="about-left-content">
+          <div class="p-2">
+            <h1 class="upper mb-4" id="overview-title">Overview / About</h1>
+            <p class="overview-text">
+              Welcome to HabitHints, the ultimate tool for building better
+              habits and transforming your life! Inspired by James Clear’s
+              bestselling book Atomic Habits, HabitHints takes the principles of
+              effective habit formation and combines them with cutting-edge
+              technology to deliver a truly personalized experience.<br /><br />
+              Our app goes beyond simple habit tracking. HabitHints acts as your
+              personal coach, helping you identify triggers, focus on small,
+              achievable actions, and align your habits with the person you want
+              to become. With real-time feedback powered by AI, insights
+              tailored to your lifestyle, and a vibrant community for
+              motivation, HabitHints is here to make lasting change not just
+              possible, but effortless.<br /><br />
+              <strong
+                >Start small, stay consistent, and let HabitHints guide you
+                every step of the way. It's time to unlock your full
+                potential—one habit at a time.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="about-right-content" id="overview-right-content">
+          <div class="p-2">
+            <div>
+              <img src="img/about.png" class="img-fluid" width="450px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Split the screen -- <br/>>
+
+<! --feature part of the page-->
+      <div class="container-feature" id="features">
+        <div class="feature-left-content">
+          <div class="p-2">
+            <div>
+              <img
+                src="img/features.png"
+                class="img-fluid"
+                width="450px"
+                id="img-features"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="feature-right-content">
+          <div class="p-2">
+            <div>
+              <h1 class="upper mb-4" id="features-title">Features</h1>
+              <br /><br />
+              <div class="features-text">
+                <ul>
+                  <li>
+                    <strong>Personalized Habit Recommendations</strong
+                    ><br />Tailored suggestions to fit your lifestyle and goals,
+                    making it easy to start the habits that matter most to you.
+                  </li>
+                  <li>
+                    <strong>Micro-Habit Tracking</strong><br />Focus on small,
+                    actionable steps that are simple to achieve, helping you
+                    build momentum effortlessly.
+                  </li>
+                  <li>
+                    <strong>AI-Powered Feedback</strong><br />Receive real-time
+                    guidance and encouragement to stay on track and refine your
+                    habits as you grow.
+                  </li>
+                  <li>
+                    <strong>Progress Visualization</strong><br />See your growth
+                    with clear, interactive charts that track your journey and
+                    celebrate your achievements.
+                  </li>
+                  <li>
+                    <strong>Daily Reminders & Notifications</strong><br />Get
+                    timely nudges to keep you consistent without being
+                    overwhelming or intrusive.
+                  </li>
+                  <li>
+                    <strong>Community Support</strong><br />Join a supportive
+                    network of like-minded individuals who can motivate and
+                    inspire you along the way.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--customer review part of the page-->
+      <h1 id="customerReviews">CUSTOMER REVIEWS</h1>
+      <div class="review-container">
+        <div class="review">
+          <div class="review-badge">⭐ Best Review</div>
+          <div class="review-content">
+            <h3>Alex Johnson</h3>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Habit Hints has truly transformed my morning routine! I’m able to
+              wake up earlier and stay productive throughout the day. Highly
+              recommend it!"
+            </p>
+            <button class="like-btn" onclick="likeReview(1)">
+              👍 <span id="like-count-1">23</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-content">
+            <h3>Emily Clark</h3>
+            <div class="star-rating">⭐⭐⭐⭐</div>
+            <p>
+              "I finally kicked my sugar addiction, thanks to Habit Hints! The
+              daily habit reminders are so helpful."
+            </p>
+            <button class="like-btn" onclick="likeReview(2)">
+              👍 <span id="like-count-2">15</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-content">
+            <h3>Michael Thompson</h3>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Building new habits has always been hard for me, but this
+              platform made it fun and manageable. I'm seeing real changes!"
+            </p>
+            <button class="like-btn" onclick="likeReview(3)">
+              👍 <span id="like-count-3">18</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-content">
+            <h3>Sarah Lee</h3>
+            <div class="star-rating">⭐⭐⭐</div>
+            <p>
+              "I now read every day, something I never thought I could do. Habit
+              Hints provides the structure I needed!"
+            </p>
+            <button class="like-btn" onclick="likeReview(4)">
+              👍 <span id="like-count-4">34</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;HabitHints - 2024 - All rights reserved</p>
+    </footer>
+  </body>
+</html>

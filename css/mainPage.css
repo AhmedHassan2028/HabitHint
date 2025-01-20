@@ -1,0 +1,121 @@
+body {
+  background-color: #fcf3dd;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #3d2c00;
+}
+
+#textContainer {
+  width: 50%;
+}
+
+#textContainer h1 {
+  color: #cb962e;
+  font-size: 4rem;
+}
+
+.container {
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.logoContainer {
+  align-items: center;
+  padding-left: 10%;
+}
+
+.logo {
+  width: 40rem;
+  height: 30rem;
+}
+
+.btnContainer {
+  background-color: #cb962e;
+  display: flex;
+  border-radius: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#active {
+  background-color: #cb962e;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  #textContainer {
+    width: 70%;
+  }
+
+  #textContainer h1 {
+    font-size: 3rem;
+  }
+
+  .logo {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #textContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #textContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    width: 20rem;
+  }
+
+  .btnContainer {
+    height: 4rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #textContainer h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 15rem;
+  }
+
+  .btnContainer {
+    height: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+}

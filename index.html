@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <link rel="icon" href="img/icon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mainPage.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <img
+              src="img/mainPageNavBarLogo.png"
+              alt="HabitHintsLogo"
+              id="habithintLogo"
+            />
+          </li>
+          <li>
+            <a href="index.html" id="active">Home Page</a>
+          </li>
+          <li class="overviewMenu">
+            <a href="overview.html">Overview</a>
+            <img src="img/arrow-down.png" alt="arrow" data-type="special" />
+            <ul class="submenu" data-type="special">
+              <li data-type="special"><a href="overview.html">About</a></li>
+              <li data-type="special">
+                <a href="overview.html#features">Features</a>
+              </li>
+              <li data-type="special">
+                <a href="overview.html#customerReviews">Customer Reviews</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contactUs.html">ContactUs</a>
+          </li>
+          <li>
+            <a href="download.html">Download</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table class="container">
+        <tr>
+          <td id="textContainer">
+            <h1>
+              Habit Hint: Unlock<br />your potential, one<br />step at a time!
+            </h1>
+          </td>
+          <td rowspan="3" class="logoContainer">
+            <img src="img/mainPageLogo.JPG" alt="HabitHintsLogo" class="logo" />
+          </td>
+        </tr>
+        <tr>
+          <td class="btnContainer">
+            <a href="download.html" class="btn" id="getStarted"
+              ><h2>GET STARTED</h2></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="btnContainer">
+            <a href="overview.html" class="btn" id="overview"
+              ><h2>OVERVIEW</h2></a
+            >
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p>&copy;HabitHints - 2024 - All rights reserved</p>
+    </footer>
+  </body>
+</html>
